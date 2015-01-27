@@ -1,10 +1,19 @@
 <?php
 
-function echo()
+function echoS()
 {
-  // ...
+	$args = func_get_args();
+	foreach ($args as $i)
+	
+	{
+  	echo $i;
+  	echo'<br>';
+  	}
+  	
 }
 
-echo();
-echo('bla');
-echo('foo', 'bar', 'baz');
+echoS();
+echoS('bla');
+echoS('foo', 'bar', 'baz');
+
+?>
